@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: beige;
+}
+
+body, .quote-input{
+    font-family: 'Geist Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: lightcyan;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute;
+    top: 5rem;
+    font-size: 3.5rem;
+    color: lightgrey;
+    font-weight: bold;
+}
+
+.quote-input {
+    background-color: #FFEFEF;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: .3rem;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+
+}
+
+.quote-input:focus {
+    border-color: gray;
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.stopper {
+    position: absolute;
+    bottom: 10rem;
+    background-color: #FEFCF3;
+    width: 6rem;
+    height: auto;
+    text-align: center;
+    border: .5px solid gray;
+    border-radius: .3rem;
+}
+
+.stopper:hover {
+    background: transparent;
+    background-color: #F4F4F4;
+    font-style: italic;
+    border: 1.5px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.reset {
+    position: absolute;
+    bottom: 6rem;
+    background-color: #FEFCF3;
+    width: 6rem;
+    height: auto;
+    text-align:center;
+    border: .5px solid gray;
+    border-radius: .3rem;
+}
+
+.reset:hover {
+    background: transparent;
+    background-color: #F4F4F4;
+    font-style: italic;
+    border: 1.5px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.correct {
+    color: #B5D5C5;
+}
+
+.incorrect{
+    color: #FD8A8A;
+    text-decoration: underline;
+}
